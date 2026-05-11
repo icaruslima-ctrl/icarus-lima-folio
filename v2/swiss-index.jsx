@@ -113,6 +113,7 @@ const SwissIndex = () => {
             <div style={{ fontSize: 12, letterSpacing: 1, textTransform: "uppercase", color: muted }}>Get in touch</div>
             <a href={`mailto:${D.email}`} style={{ fontSize: 22, fontWeight: 500, color: ink, textDecoration: "underline", textUnderlineOffset: 4, textDecorationColor: accent }}>{D.email}</a>
             <span style={{ fontSize: 16, color: "#444" }}>{D.phone}</span>
+            <a href="pdf/icarus_LIMA_CV2026.pdf" download style={{ display: "inline-flex", alignItems: "center", gap: 8, marginTop: 8, fontSize: 13, fontWeight: 500, color: accent, textDecoration: "none", letterSpacing: 0.5 }}>Download CV ↓</a>
           </div>
         </Cell>
       </div>

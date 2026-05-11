@@ -262,6 +262,7 @@ window.SwissShared = (() => {
             : <a href="#/work/the-iconic" style={{ color: active === "case" ? accent : ink, textDecoration: "none" }}>Case study</a>
           }
           <a href="#contact" style={{ color: ink, textDecoration: "none" }}>Contact</a>
+          <a href="pdf/icarus_LIMA_CV2026.pdf" download style={{ color: accent, textDecoration: "none" }}>CV ↓</a>
         </nav>
       </div>
     );
