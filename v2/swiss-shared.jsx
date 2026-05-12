@@ -31,8 +31,16 @@ window.SwissShared = (() => {
     );
   }
 
-  // Fetch image list from a local directory (works with Python's http.server directory listing)
-  // Sorts files by the leading number in their filename, then alphabetically.
+  function useIsMobile() {
+    const [mob, setMob] = React.useState(() => window.innerWidth < 768);
+    React.useEffect(() => {
+      const fn = () => setMob(window.innerWidth < 768);
+      window.addEventListener("resize", fn);
+      return () => window.removeEventListener("resize", fn);
+    }, []);
+    return mob;
+  }
+
   function useDirectoryImages(dir) {
     const [images, setImages] = React.useState(null);
     React.useEffect(() => {
@@ -238,37 +246,43 @@ window.SwissShared = (() => {
 
   // Page header — consistent across all pages
   function Masthead({ active, page, nextHref, nextLabel }) {
+    const mob = useIsMobile();
     return (
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(12, 1fr)", gap: 16, padding: "26px 56px", borderBottom: `1px solid ${rule}`, fontSize: 13 }}>
-        <div style={{ gridColumn: "span 4", display: "flex", alignItems: "center", gap: 10 }}>
-          <a href="#/" style={{ color: ink, textDecoration: "none", fontWeight: 500 }}>Icarus Lima</a>
-          <span style={{ color: muted }}>· Folio</span>
+      <div style={{ padding: mob ? "16px 20px" : "26px 56px", borderBottom: `1px solid ${rule}`, fontSize: 13 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <a href="#/" style={{ color: ink, textDecoration: "none", fontWeight: 500 }}>Icarus Lima</a>
+            {!mob && <span style={{ color: muted }}>· Folio</span>}
+          </div>
+          {!mob && (
+            <div style={{ color: muted }}>
+              {page || "Digital Product Designer (UX-UI) · Sydney, AU"}
+            </div>
+          )}
+          <nav style={{ display: "flex", alignItems: "center", gap: mob ? 16 : 22 }}>
+            <a href="#/" style={{ color: active === "index" ? accent : ink, textDecoration: "none" }}>Index</a>
+            {!mob && (nextHref
+              ? <a href={nextHref} style={{ color: ink, textDecoration: "none" }}>Next · {nextLabel} →</a>
+              : <a href="#/work/the-iconic" style={{ color: active === "case" ? accent : ink, textDecoration: "none" }}>Case study</a>
+            )}
+            {!mob && <a href="#contact" style={{ color: ink, textDecoration: "none" }}>Contact</a>}
+            <a href="pdf/icarus_LIMA_CV2026.pdf" download style={{ color: accent, textDecoration: "none" }}>CV ↓</a>
+          </nav>
         </div>
-        <div style={{ gridColumn: "span 5", color: muted }}>
-          {page || "Digital Product Designer (UX-UI) · Sydney, AU"}
-        </div>
-        <nav style={{ gridColumn: "span 3", display: "flex", justifyContent: "flex-end", gap: 22 }}>
-          <a href="#/" style={{ color: active === "index" ? accent : ink, textDecoration: "none" }}>Index</a>
-          {nextHref
-            ? <a href={nextHref} style={{ color: ink, textDecoration: "none" }}>Next · {nextLabel} →</a>
-            : <a href="#/work/the-iconic" style={{ color: active === "case" ? accent : ink, textDecoration: "none" }}>Case study</a>
-          }
-          <a href="#contact" style={{ color: ink, textDecoration: "none" }}>Contact</a>
-          <a href="pdf/icarus_LIMA_CV2026.pdf" download style={{ color: accent, textDecoration: "none" }}>CV ↓</a>
-        </nav>
       </div>
     );
   }
 
   function Footer({ no, of }) {
+    const mob = useIsMobile();
     return (
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(12, 1fr)", gap: 16, padding: "16px 56px", borderTop: `1px solid ${rule}`, fontSize: 12, color: muted }}>
-        <div style={{ gridColumn: "span 4" }}>© Icarus Lima · 2026</div>
-        <div style={{ gridColumn: "span 4" }}>Set in Helvetica Neue & JetBrains Mono.</div>
-        <div style={{ gridColumn: "span 4", textAlign: "right" }}>{no && of ? `${no} / ${of}` : "End of folio"} · ◼</div>
+      <div style={{ display: "flex", flexDirection: mob ? "column" : "row", justifyContent: "space-between", gap: mob ? 4 : 0, padding: mob ? "16px 20px" : "16px 56px", borderTop: `1px solid ${rule}`, fontSize: 12, color: muted }}>
+        <div>© Icarus Lima · 2026</div>
+        {!mob && <div>Set in Helvetica Neue & JetBrains Mono.</div>}
+        <div>{no && of ? `${no} / ${of}` : "End of folio"} · ◼</div>
       </div>
     );
   }
 
-  return { sans, mono, accent, ink, paper, rule, muted, hairline, Placeholder, Lightbox, ImageGallery, DynamicGallery, Masthead, Footer };
+  return { sans, mono, accent, ink, paper, rule, muted, hairline, Placeholder, Lightbox, ImageGallery, DynamicGallery, Masthead, Footer, useIsMobile };
 })();
