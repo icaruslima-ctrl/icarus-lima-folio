@@ -36,23 +36,15 @@ window.SwissShared = (() => {
   function useDirectoryImages(dir) {
     const [images, setImages] = React.useState(null);
     React.useEffect(() => {
-      fetch(dir)
-        .then((r) => r.text())
-        .then((html) => {
-          const doc = new DOMParser().parseFromString(html, "text/html");
-          const links = Array.from(doc.querySelectorAll("a[href]"))
-            .map((a) => a.getAttribute("href"))
-            .filter((h) => /\.(png|jpg|jpeg|webp|gif)$/i.test(h))
-            .map((h) => h.replace(/^.*\//, "")); // basename only
-
-          // Sort by first run of digits found in the filename
-          links.sort((a, b) => {
+      fetch(`${dir}/manifest.json`)
+        .then((r) => r.json())
+        .then((files) => {
+          files.sort((a, b) => {
             const na = parseInt((a.match(/\d+/) || ["0"])[0], 10);
             const nb = parseInt((b.match(/\d+/) || ["0"])[0], 10);
             return na !== nb ? na - nb : a.localeCompare(b);
           });
-
-          setImages(links.map((name) => ({ src: `${dir}/${name}`, label: name.replace(/\.[^.]+$/, "") })));
+          setImages(files.map((name) => ({ src: `${dir}/${name}`, label: name.replace(/\.[^.]+$/, "") })));
         })
         .catch(() => setImages([]));
     }, [dir]);
