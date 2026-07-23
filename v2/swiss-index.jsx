@@ -66,7 +66,7 @@ const SwissIndex = () => {
       {/* WORK ROWS */}
       {D.roles.map((r) =>
         mob ? (
-          <a key={r.no} href={`#/work/${slug(r.company)}`}
+          <a key={r.no} href={`#/work/${slug(r.company)}`} className="work-row"
             style={{ display: "block", padding: "20px 20px", borderBottom: `1px solid ${hairline}`, color: ink, textDecoration: "none" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 4 }}>
               <span style={{ fontSize: 22, fontWeight: 500, letterSpacing: -.5 }}>{r.company}</span>
@@ -76,7 +76,7 @@ const SwissIndex = () => {
             <p style={{ fontSize: 14, lineHeight: 1.5, margin: 0, color: "#444" }}>{r.summary}</p>
           </a>
         ) : (
-          <a key={r.no} href={`#/work/${slug(r.company)}`}
+          <a key={r.no} href={`#/work/${slug(r.company)}`} className="work-row"
             style={{ display: "grid", gridTemplateColumns: "repeat(12, 1fr)", gap: 16, padding: "26px 56px", borderBottom: `1px solid ${hairline}`, color: ink, textDecoration: "none" }}>
             <Cell span={1}><span style={{ fontSize: 13, color: muted, fontFamily: mono }}>{r.no}</span></Cell>
             <Cell span={1}><span style={{ fontSize: 13, color: muted, fontFamily: mono }}>{r.years}</span></Cell>
