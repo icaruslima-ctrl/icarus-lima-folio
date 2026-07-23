@@ -257,14 +257,34 @@ const SwissCaseShort = ({ slug }) => {
       <div style={{ ...grid(), padding: mob ? "32px 20px" : "60px 56px", borderBottom: `1px solid ${rule}` }}>
         <Cell span={2}><div style={{ fontSize: 12, letterSpacing: 1, textTransform: "uppercase", color: muted }}>Focus</div></Cell>
         <Cell span={10}>
-          <ol style={{ margin: 0, padding: 0, listStyle: "none" }}>
-            {role.focus.map((f, j) =>
-              <li key={j} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: 12, padding: "14px 0", borderTop: j === 0 ? "none" : `1px solid ${hairline}` }}>
-                <span style={{ fontFamily: mono, fontSize: 12, color: accent }}>F.0{j + 1}</span>
-                <span style={{ fontSize: mob ? 15 : 17, lineHeight: 1.5 }}>{f}</span>
-              </li>
-            )}
-          </ol>
+          {typeof role.focus[0] === "object" ? (() => {
+            let n = 0;
+            return role.focus.map((group, gi) => (
+              <div key={gi} style={{ marginTop: gi === 0 ? 0 : 28 }}>
+                <div style={{ fontSize: 12, letterSpacing: 1, textTransform: "uppercase", color: muted, marginBottom: 4 }}>{group.heading}</div>
+                <ol style={{ margin: 0, padding: 0, listStyle: "none" }}>
+                  {group.items.map((f, j) => {
+                    n++;
+                    return (
+                      <li key={j} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: 12, padding: "14px 0", borderTop: j === 0 ? "none" : `1px solid ${hairline}` }}>
+                        <span style={{ fontFamily: mono, fontSize: 12, color: accent }}>F.0{n}</span>
+                        <span style={{ fontSize: mob ? 15 : 17, lineHeight: 1.5 }}>{f}</span>
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ));
+          })() : (
+            <ol style={{ margin: 0, padding: 0, listStyle: "none" }}>
+              {role.focus.map((f, j) =>
+                <li key={j} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: 12, padding: "14px 0", borderTop: j === 0 ? "none" : `1px solid ${hairline}` }}>
+                  <span style={{ fontFamily: mono, fontSize: 12, color: accent }}>F.0{j + 1}</span>
+                  <span style={{ fontSize: mob ? 15 : 17, lineHeight: 1.5 }}>{f}</span>
+                </li>
+              )}
+            </ol>
+          )}
         </Cell>
       </div>
 

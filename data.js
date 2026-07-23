@@ -18,10 +18,21 @@ window.ICARUS_DATA = {
       role: "Senior UXD",
       summary: "Collaborating with Product Managers and Engineers to deliver user-centred logistics solutions across the full design lifecycle — from research synthesis and ideation through to high-fidelity prototyping and front-end quality assurance.",
       focus: [
-        "AI-powered research synthesis using Claude to accelerate discovery cycles",
-        "Design system governance in Figma across cross-functional squads",
-        "Bridging design intent to front-end implementation via Cursor",
-        "Front-end QA against the design system so developers stay focused on feature logic"
+        {
+          heading: "Key Responsibilities",
+          items: [
+            "Own end-to-end UX/UI design for the logistics platform within an Agile delivery squad, partnering with Product Managers and Engineers.",
+            "Maintain and govern the design system, and QA front-end implementation against it."
+          ]
+        },
+        {
+          heading: "Key Achievements",
+          items: [
+            "Embedded an AI-augmented workflow (Claude for research synthesis, Figma for design system governance, Cursor for design-to-code handoff), improving design-to-dev consistency.",
+            "Freed developers to focus on feature logic by actively QA-ing front-end output against the design system, helping the cross-functional squad ship with confidence.",
+            "Applied WCAG-aligned accessibility standards across UI design and QA, ensuring the platform remained usable and compliant for all users."
+          ]
+        }
       ],
       outcomes: ["Faster discovery cycles", "Tighter design-to-dev handoffs", "Consistent, confident shipping"]
     },

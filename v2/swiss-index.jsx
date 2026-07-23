@@ -8,6 +8,7 @@ const SwissIndex = () => {
     <div style={{ gridColumn: `span ${span}`, ...style }}>{children}</div>;
 
   const slug = (c) => c.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const flatFocus = (focus) => typeof focus[0] === "object" ? focus.flatMap((g) => g.items) : focus;
   const grid = (extra = {}) => ({ display: "grid", gridTemplateColumns: mob ? "1fr" : "repeat(12, 1fr)", gap: 16, ...extra });
 
   return (
@@ -88,7 +89,7 @@ const SwissIndex = () => {
             <Cell span={5}>
               <p style={{ fontSize: 15, lineHeight: 1.55, margin: 0 }}>{r.summary}</p>
               <ul style={{ margin: "10px 0 0", padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 4 }}>
-                {r.focus.slice(0, 2).map((f) =>
+                {flatFocus(r.focus).slice(0, 2).map((f) =>
                   <li key={f} style={{ fontSize: 13, color: "#444", position: "relative", paddingLeft: 14 }}>
                     <span style={{ position: "absolute", left: 0, top: 8, width: 8, height: 1, background: accent }} />{f}
                   </li>
