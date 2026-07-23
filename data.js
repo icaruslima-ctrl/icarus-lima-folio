@@ -153,11 +153,20 @@ window.ICARUS_DATA = {
       company: "The Iconic",
       years: "Mar 2016 — Jun 2018",
       role: "Head of UXD",
-      summary: "Led eight designers across cross-functional teams to evolve the shopping experience using behavioural data.",
+      summary: "10 years of design leadership across Australia's largest online fashion retailer (THE ICONIC), an ASX-listed venue analytics company (Skyfii), a global media publisher (News Corp), and a global digital products agency (Tigerspike) serving Fortune 1000 clients — working within Agile teams and cross-functionally with development, editorial, and client stakeholders throughout.",
       focus: [
-        "Managed eight designers across cross-functional squads",
-        "Used shopping behaviour data to refine the product suite",
-        "Curated UX methodologies for fast design and delivery"
+        {
+          heading: "Key Responsibilities",
+          items: [
+            "Led design across cross-functional Agile squads at THE ICONIC."
+          ]
+        },
+        {
+          heading: "Key Achievements",
+          items: [
+            "Curated and advocated UX methodology and patterns at THE ICONIC to speed up design-to-implementation."
+          ]
+        }
       ],
       outcomes: ["Cohesive, engaging UX", "Lifted spend and engagement", "Faster design ops"]
     },
@@ -167,11 +176,20 @@ window.ICARUS_DATA = {
       company: "Skyfii",
       years: "Jul 2015 — May 2016",
       role: "Lead UX-UI",
-      summary: "Delivered a leading analytics platform that lets bricks-and-mortar retailers gather smarter intelligence about their stores and shoppers.",
+      summary: "10 years of design leadership across Australia's largest online fashion retailer (THE ICONIC), an ASX-listed venue analytics company (Skyfii), a global media publisher (News Corp), and a global digital products agency (Tigerspike) serving Fortune 1000 clients — working within Agile teams and cross-functionally with development, editorial, and client stakeholders throughout.",
       focus: [
-        "Brand identity for the Skyfii analytics platform",
-        "Defined the end-to-end user experience",
-        "Worked with developers and retail clients to ship"
+        {
+          heading: "Key Responsibilities",
+          items: [
+            "Defined brand and UX for Skyfii's analytics platform."
+          ]
+        },
+        {
+          heading: "Key Achievements",
+          items: [
+            "Collaborated directly with development teams and bricks-and-mortar clients to deliver Skyfii's retail analytics platform."
+          ]
+        }
       ],
       outcomes: ["Robust analytics platform", "Distinctive brand identity", "Higher adoption and satisfaction"]
     },
@@ -181,11 +199,22 @@ window.ICARUS_DATA = {
       company: "News Corp",
       years: "Nov 2014 — Jul 2015",
       role: "Senior UX-UI",
-      summary: "Defined design and user experience for the digital editions of News Corp mastheads.",
+      summary: "10 years of design leadership across Australia's largest online fashion retailer (THE ICONIC), an ASX-listed venue analytics company (Skyfii), a global media publisher (News Corp), and a global digital products agency (Tigerspike) serving Fortune 1000 clients — working within Agile teams and cross-functionally with development, editorial, and client stakeholders throughout.",
       focus: [
-        "UX best practices across digital mastheads",
-        "Aligned design with editorial and executive teams",
-        "Cross-functional collaboration with dev and editorial"
+        {
+          heading: "Key Responsibilities",
+          items: [
+            "Set UX standards for News Corp's masthead editions."
+          ]
+        },
+        {
+          heading: "Key Achievements",
+          items: [
+            "UX best practices across digital mastheads",
+            "Aligned design with editorial and executive teams",
+            "Cross-functional collaboration with dev and editorial"
+          ]
+        }
       ],
       outcomes: ["Cohesive reading experience", "Improved engagement metrics", "Editorially-aligned UX"]
     },
@@ -195,11 +224,20 @@ window.ICARUS_DATA = {
       company: "Tigerspike",
       years: "Mar 2008 — Nov 2014",
       role: "Lead UX-UI",
-      summary: "Maintained quality and fidelity through the full design and development cycle, reporting to the Creative Director.",
+      summary: "10 years of design leadership across Australia's largest online fashion retailer (THE ICONIC), an ASX-listed venue analytics company (Skyfii), a global media publisher (News Corp), and a global digital products agency (Tigerspike) serving Fortune 1000 clients — working within Agile teams and cross-functionally with development, editorial, and client stakeholders throughout.",
       focus: [
-        "QA across design and development phases",
-        "Workflow, creative management, client presentations",
-        "Technical implementation oversight"
+        {
+          heading: "Key Responsibilities",
+          items: [
+            "Oversaw design quality and client delivery at Tigerspike."
+          ]
+        },
+        {
+          heading: "Key Achievements",
+          items: [
+            "Oversaw design quality, workflow, and client delivery at Tigerspike over a 6-year tenure, working cross-functionally with creative, dev, and client teams."
+          ]
+        }
       ],
       outcomes: ["Consistently high-quality output", "Streamlined client comms", "Successful delivery at scale"]
     }

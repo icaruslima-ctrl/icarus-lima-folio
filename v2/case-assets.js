@@ -95,9 +95,8 @@ window.CASE_ASSETS = {
     problem: "A growing marketplace needed a coherent shopping experience across discovery, browse, and checkout — without slowing the velocity of cross-functional squads each owning their own surface.",
     approach: "I led a team of eight designers, each embedded in a different end-user touchpoint. We built a shared methodology — patterns, vocabulary, research cadence — and used behavioural data to prioritise where to invest. The aim: empower users while giving squads autonomy.",
     method: [
-      "Curated a UX pattern library to speed discovery and decision-making.",
-      "Embedded behavioural analytics into every research cycle.",
-      "Coached designers across squads on data-led prioritisation.",
+      "Led design across cross-functional Agile squads at THE ICONIC.",
+      "Curated and advocated UX methodology and patterns at THE ICONIC to speed up design-to-implementation.",
     ],
     metrics: [
       { k: "Designers led", v: "8" },
