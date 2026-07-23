@@ -86,14 +86,34 @@ const SwissCaseHero = ({ slug }) => {
       <div style={{ ...grid(), padding: mob ? "32px 20px" : "60px 56px", borderBottom: `1px solid ${rule}` }}>
         <Cell span={2}><div style={{ fontSize: 12, letterSpacing: 1, textTransform: "uppercase", color: muted }}>Method</div></Cell>
         <Cell span={6}>
-          <ol style={{ margin: 0, padding: 0, listStyle: "none" }}>
-            {m.method.map((step, i) =>
-              <li key={i} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: 12, padding: "14px 0", borderTop: i === 0 ? "none" : `1px solid ${hairline}` }}>
-                <span style={{ fontFamily: mono, fontSize: 12, color: accent }}>M.0{i + 1}</span>
-                <span style={{ fontSize: mob ? 15 : 17, lineHeight: 1.5 }}>{step}</span>
-              </li>
-            )}
-          </ol>
+          {typeof m.method[0] === "object" ? (() => {
+            let n = 0;
+            return m.method.map((group, gi) => (
+              <div key={gi} style={{ marginTop: gi === 0 ? 0 : 28 }}>
+                <div style={{ fontSize: 12, letterSpacing: 1, textTransform: "uppercase", color: muted, marginBottom: 4 }}>{group.heading}</div>
+                <ol style={{ margin: 0, padding: 0, listStyle: "none" }}>
+                  {group.items.map((step, j) => {
+                    n++;
+                    return (
+                      <li key={j} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: 12, padding: "14px 0", borderTop: j === 0 ? "none" : `1px solid ${hairline}` }}>
+                        <span style={{ fontFamily: mono, fontSize: 12, color: accent }}>M.0{n}</span>
+                        <span style={{ fontSize: mob ? 15 : 17, lineHeight: 1.5 }}>{step}</span>
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ));
+          })() : (
+            <ol style={{ margin: 0, padding: 0, listStyle: "none" }}>
+              {m.method.map((step, i) =>
+                <li key={i} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: 12, padding: "14px 0", borderTop: i === 0 ? "none" : `1px solid ${hairline}` }}>
+                  <span style={{ fontFamily: mono, fontSize: 12, color: accent }}>M.0{i + 1}</span>
+                  <span style={{ fontSize: mob ? 15 : 17, lineHeight: 1.5 }}>{step}</span>
+                </li>
+              )}
+            </ol>
+          )}
         </Cell>
         <Cell span={4}>
           <div style={{ fontSize: 12, letterSpacing: 1, textTransform: "uppercase", color: muted, marginBottom: 12, marginTop: mob ? 24 : 0 }}>By the numbers</div>
