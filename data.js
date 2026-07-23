@@ -42,11 +42,23 @@ window.ICARUS_DATA = {
       company: "4Mation",
       years: "Mar 2024 — Sep 2024",
       role: "Senior UX/UI Designer",
-      summary: "Summary to be added.",
+      summary: "4mation is a Sydney-based digital agency. Engaged on a client project for FIS, a global financial technology company delivering wealth management solutions to financial institutions worldwide.",
       focus: [
-        "Details to be added"
+        {
+          heading: "Key Responsibilities",
+          items: [
+            "Implemented and extended the design system for FIS's wealth management platform as part of a client engagement delivered through 4mation."
+          ]
+        },
+        {
+          heading: "Key Achievements",
+          items: [
+            "Delivered end-to-end UX/UI design across the wealth management design system, from research through implementation, collaborating with cross-functional client and delivery teams.",
+            "Ensured user-friendly, visually consistent outcomes aligned to FIS's design system standards using Agile, iterative delivery."
+          ]
+        }
       ],
-      outcomes: ["Details to be added"]
+      outcomes: ["Consistent design system delivery", "Cross-functional client collaboration", "Agile, iterative delivery"]
     },
     {
       no: "03",
@@ -79,11 +91,22 @@ window.ICARUS_DATA = {
       company: "Oovvuu",
       years: "Jul 2021 — Jun 2023",
       role: "Senior Lead UX/UI Designer",
-      summary: "Empowered publishers and journalists to enrich articles with curated video, integrating sponsored placements without breaking the editorial experience.",
+      summary: "Oovvuu is a Sydney-based AI video platform that helps publishers and broadcasters embed relevant video into news articles.",
       focus: [
-        "Curated video integration to lift article engagement",
-        "Relevant, non-intrusive sponsored ad placements",
-        "Revenue-share model for publishers and the platform"
+        {
+          heading: "Key Responsibilities",
+          items: [
+            "Curated and implemented the design system, partnering cross-functionally with tech and executive teams.",
+            "Designed the end-to-end capability empowering publishers and journalists to enhance articles with video, using AI-driven recommendations to surface relevant content."
+          ]
+        },
+        {
+          heading: "Key Achievements",
+          items: [
+            "Shipped an AI-recommended video capability within Agile delivery cycles, enabling publishers and journalists to enrich articles and grow reader engagement.",
+            "Designed the ad-stream experience between videos, creating a new revenue channel for publishers and the business."
+          ]
+        }
       ],
       outcomes: ["Higher engagement on articles", "New revenue streams", "Editorial-grade UX"]
     },
@@ -93,11 +116,24 @@ window.ICARUS_DATA = {
       company: "SiteMinder",
       years: "Feb 2021 — Jul 2021",
       role: "Senior Lead UX/UI Designer",
-      summary: "Summary to be added.",
+      summary: "SiteMinder is a global hotel commerce platform used by properties worldwide to manage bookings and distribution across channels.",
       focus: [
-        "Details to be added"
+        {
+          heading: "Key Responsibilities",
+          items: [
+            "Led and mentored a team of 5 designers across 5 cross-functional Agile squads, each owning distinct customer-facing and internal touchpoints.",
+            "Supported direct reports and managed resourcing across the design team."
+          ]
+        },
+        {
+          heading: "Key Achievements",
+          items: [
+            "Used data-informed design and user research to improve the hotelier and guest experience across the platform.",
+            "Championed WCAG-aligned accessibility standards across customer-facing and internal design work."
+          ]
+        }
       ],
-      outcomes: ["Details to be added"]
+      outcomes: ["Improved hotelier & guest UX", "Accessible, WCAG-aligned design", "Led team across 5 squads"]
     },
     {
       no: "06",
