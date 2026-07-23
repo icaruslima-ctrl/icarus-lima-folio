@@ -189,7 +189,7 @@ window.ICARUS_DATA = {
       company: "The Iconic",
       years: "Mar 2016 — Jun 2018",
       role: "Head of UXD",
-      summary: "10 years of design leadership across Australia's largest online fashion retailer (THE ICONIC), an ASX-listed venue analytics company (Skyfii), a global media publisher (News Corp), and a global digital products agency (Tigerspike) serving Fortune 1000 clients — working within Agile teams and cross-functionally with development, editorial, and client stakeholders throughout.",
+      summary: "I managed a team of designers, placed into cross-functional teams. Each designer was responsible for unique end-user touch points throughout the platform. The team focused on improving the UX using data strategically to help the business understand shopping behaviour in order to enhance the suite of products empowering users to a high engagement and improving spending in the platform. I was also responsible for curating and advocating the UXD methodologies and patterns for fast design and implementation.",
       focus: [
         {
           heading: "Key Responsibilities",
