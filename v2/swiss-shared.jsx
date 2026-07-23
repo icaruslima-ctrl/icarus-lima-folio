@@ -263,7 +263,7 @@ window.SwissShared = (() => {
             <a href="#/" style={{ color: active === "index" ? accent : ink, textDecoration: "none" }}>Index</a>
             {!mob && (nextHref
               ? <a href={nextHref} style={{ color: ink, textDecoration: "none" }}>Next · {nextLabel} →</a>
-              : <a href="#/work/the-iconic" style={{ color: active === "case" ? accent : ink, textDecoration: "none" }}>Case study</a>
+              : <a href="#/work/shippit" style={{ color: active === "case" ? accent : ink, textDecoration: "none" }}>Case study</a>
             )}
             {!mob && <a href="#contact" style={{ color: ink, textDecoration: "none" }}>Contact</a>}
             <a href="pdf/icarus_LIMA_CV2026.pdf" download style={{ color: accent, textDecoration: "none" }}>CV ↓</a>
