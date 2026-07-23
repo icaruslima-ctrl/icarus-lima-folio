@@ -14,7 +14,7 @@ window.ICARUS_DATA = {
       no: "01",
       title: "Senior UX/UI Designer",
       company: "Shippit",
-      years: "Sep 2024 — Current",
+      years: "Sep 2024 — Apr 2026",
       role: "Senior UXD",
       summary: "Collaborating with Product Managers and Engineers to deliver user-centred logistics solutions across the full design lifecycle — from research synthesis and ideation through to high-fidelity prototyping and front-end quality assurance.",
       focus: [

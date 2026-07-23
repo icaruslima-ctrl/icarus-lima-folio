@@ -4,7 +4,7 @@ window.CASE_ASSETS = {
   "shippit": {
     sector: "Logistics · SaaS",
     team: "Senior UXD · cross-functional squads",
-    duration: "Sep 2024 — Current",
+    duration: "Sep 2024 — Apr 2026",
     stack: "Figma · Claude · Cursor · UX research",
     problem: "Logistics workflows are complex and unforgiving — a poor handoff between design and engineering means inconsistent UI, regressions against the design system, and developers spending time on pixel-pushing instead of feature logic.",
     approach: "I work across the full design lifecycle with AI embedded throughout: Claude for research synthesis, Figma for design system governance, and Cursor to bridge design intent directly to front-end implementation — actively QA-ing output so the squad ships with confidence.",
