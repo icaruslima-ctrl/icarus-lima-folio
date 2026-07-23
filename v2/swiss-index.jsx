@@ -81,8 +81,10 @@ const SwissIndex = () => {
             <Cell span={1}><span style={{ fontSize: 13, color: muted, fontFamily: mono }}>{r.no}</span></Cell>
             <Cell span={1}><span style={{ fontSize: 13, color: muted, fontFamily: mono }}>{r.years}</span></Cell>
             <Cell span={2} style={{ maxWidth: 400 }}>
-              <div style={{ fontSize: 26, fontWeight: 500, letterSpacing: -.6 }}>{r.company}</div>
-              <div style={{ fontSize: 13, color: muted, marginTop: 2 }}>{r.role}</div>
+              <div style={{ display: "flex", alignItems: "baseline", gap: 8, flexWrap: "wrap" }}>
+                <div style={{ fontSize: 26, fontWeight: 500, letterSpacing: -.6 }}>{r.company}</div>
+                <div style={{ fontSize: 13, color: muted }}>{r.role}</div>
+              </div>
             </Cell>
             <Cell span={1} />
             <Cell span={5}>
