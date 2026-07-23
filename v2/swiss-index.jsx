@@ -78,15 +78,16 @@ const SwissIndex = () => {
         ) : (
           <a key={r.no} href={`#/work/${slug(r.company)}`} className="work-row"
             style={{ display: "grid", gridTemplateColumns: "repeat(12, 1fr)", gap: 16, padding: "26px 56px", borderBottom: `1px solid ${hairline}`, color: ink, textDecoration: "none" }}>
-            <Cell span={6}>
-              <div style={{ display: "flex", alignItems: "baseline", gap: 14, whiteSpace: "nowrap" }}>
-                <span style={{ fontSize: 13, color: muted, fontFamily: mono }}>{r.no}</span>
-                <span style={{ fontSize: 13, color: muted, fontFamily: mono }}>{r.years}</span>
-                <span style={{ fontSize: 26, fontWeight: 500, letterSpacing: -.6 }}>{r.company}</span>
-                <span style={{ fontSize: 13, color: muted }}>{r.title}</span>
+            <Cell span={1}><span style={{ fontSize: 13, color: muted, fontFamily: mono }}>{r.no}</span></Cell>
+            <Cell span={1}><span style={{ fontSize: 13, color: muted, fontFamily: mono }}>{r.years}</span></Cell>
+            <Cell span={2} style={{ maxWidth: 400 }}>
+              <div style={{ display: "flex", alignItems: "baseline", gap: 8, flexWrap: "wrap" }}>
+                <div style={{ fontSize: 26, fontWeight: 500, letterSpacing: -.6 }}>{r.company}</div>
+                <div style={{ fontSize: 13, color: muted }}>{r.role}</div>
               </div>
             </Cell>
-            <Cell span={4}>
+            <Cell span={1} />
+            <Cell span={5}>
               <p style={{ fontSize: 15, lineHeight: 1.55, margin: 0 }}>{r.summary}</p>
               <ul style={{ margin: "10px 0 0", padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 4 }}>
                 {r.focus.slice(0, 2).map((f) =>
