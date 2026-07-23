@@ -27,10 +27,22 @@ window.ICARUS_DATA = {
     },
     {
       no: "02",
-      title: "Product Designer (Contractor)",
+      title: "Senior UX/UI Designer",
+      company: "4Mation",
+      years: "Mar 2024 — Sep 2024",
+      role: "Senior UX/UI Designer",
+      summary: "Summary to be added.",
+      focus: [
+        "Details to be added"
+      ],
+      outcomes: ["Details to be added"]
+    },
+    {
+      no: "03",
+      title: "Senior UX/UI Designer (Contractor)",
       company: "Hello Molly",
-      years: "2023",
-      role: "Product Design Contractor",
+      years: "Jun 2023 — Dec 2023",
+      role: "Senior UX/UI Designer (Contractor)",
       summary: "Strategic collaboration with tech and executive teams to elevate the Hello Molly e-commerce platform.",
       focus: [
         "Modern, user-friendly interface that showcases the product range",
@@ -41,11 +53,11 @@ window.ICARUS_DATA = {
       outcomes: ["More engaging UX", "Lifted satisfaction & retention", "Sharper customer insight"]
     },
     {
-      no: "03",
-      title: "Head of UX-UI",
+      no: "04",
+      title: "Senior Lead UX/UI Designer",
       company: "Oovvuu",
-      years: "2021 — 2023",
-      role: "Head of UX-UI",
+      years: "Jul 2021 — Jun 2023",
+      role: "Senior Lead UX/UI Designer",
       summary: "Empowered publishers and journalists to enrich articles with curated video, integrating sponsored placements without breaking the editorial experience.",
       focus: [
         "Curated video integration to lift article engagement",
@@ -55,11 +67,35 @@ window.ICARUS_DATA = {
       outcomes: ["Higher engagement on articles", "New revenue streams", "Editorial-grade UX"]
     },
     {
-      no: "04",
-      title: "Head of UX-UI",
+      no: "05",
+      title: "Senior Lead UX/UI Designer",
+      company: "SiteMinder",
+      years: "Feb 2021 — Jul 2021",
+      role: "Senior Lead UX/UI Designer",
+      summary: "Summary to be added.",
+      focus: [
+        "Details to be added"
+      ],
+      outcomes: ["Details to be added"]
+    },
+    {
+      no: "06",
+      title: "Senior Lead UX/UI Designer",
+      company: "Panthera Property Group",
+      years: "Sep 2020 — Feb 2021",
+      role: "Senior Lead UX/UI Designer",
+      summary: "Summary to be added.",
+      focus: [
+        "Details to be added"
+      ],
+      outcomes: ["Details to be added"]
+    },
+    {
+      no: "07",
+      title: "Head of UX/UI Designer",
       company: "Rockmelon",
-      years: "2018 — 2019",
-      role: "Head of UX-UI",
+      years: "May 2018 — Jul 2020",
+      role: "Head of UX/UI Designer",
       summary: "Designed and managed a platform empowering parents and therapists of children with autism spectrum disorders and learning disabilities.",
       focus: [
         "Suite of apps to centralise communications and tasks",
@@ -69,11 +105,11 @@ window.ICARUS_DATA = {
       outcomes: ["Stronger parent–therapist communication", "Streamlined task management", "Better learning experiences"]
     },
     {
-      no: "05",
-      title: "Head of UX-UI",
+      no: "08",
+      title: "Head of UXD",
       company: "The Iconic",
-      years: "2015 — 2019",
-      role: "Head of UX-UI",
+      years: "Mar 2016 — Jun 2018",
+      role: "Head of UXD",
       summary: "Led eight designers across cross-functional teams to evolve the shopping experience using behavioural data.",
       focus: [
         "Managed eight designers across cross-functional squads",
@@ -83,10 +119,10 @@ window.ICARUS_DATA = {
       outcomes: ["Cohesive, engaging UX", "Lifted spend and engagement", "Faster design ops"]
     },
     {
-      no: "06",
+      no: "09",
       title: "Lead UX-UI",
       company: "Skyfii",
-      years: "2015",
+      years: "Jul 2015 — May 2016",
       role: "Lead UX-UI",
       summary: "Delivered a leading analytics platform that lets bricks-and-mortar retailers gather smarter intelligence about their stores and shoppers.",
       focus: [
@@ -97,10 +133,10 @@ window.ICARUS_DATA = {
       outcomes: ["Robust analytics platform", "Distinctive brand identity", "Higher adoption and satisfaction"]
     },
     {
-      no: "07",
+      no: "10",
       title: "Senior UX-UI",
       company: "News Corp",
-      years: "2014 — 2015",
+      years: "Nov 2014 — Jul 2015",
       role: "Senior UX-UI",
       summary: "Defined design and user experience for the digital editions of News Corp mastheads.",
       focus: [
@@ -111,10 +147,10 @@ window.ICARUS_DATA = {
       outcomes: ["Cohesive reading experience", "Improved engagement metrics", "Editorially-aligned UX"]
     },
     {
-      no: "08",
+      no: "11",
       title: "Lead UX-UI",
       company: "Tigerspike",
-      years: "2006 — 2014",
+      years: "Mar 2008 — Nov 2014",
       role: "Lead UX-UI",
       summary: "Maintained quality and fidelity through the full design and development cycle, reporting to the Creative Director.",
       focus: [

@@ -48,14 +48,17 @@ No build step. Runs entirely in the browser.
 
 | # | Company | Years | Role |
 |---|---------|-------|------|
-| 01 | Shippit | Sep 2024 — Current | Senior UXD |
-| 02 | Hello Molly | 2023 | Product Design Contractor |
-| 03 | Oovvuu | 2021 — 2023 | Head of UX-UI |
-| 04 | Rockmelon | 2018 — 2019 | Head of UX-UI |
-| 05 | The Iconic | 2015 — 2019 | Head of UX-UI |
-| 06 | Skyfii | 2015 | Lead UX-UI |
-| 07 | News Corp | 2014 — 2015 | Senior UX-UI |
-| 08 | Tigerspike | 2006 — 2014 | Lead UX-UI |
+| 01 | Shippit | Sep 2024 — Apr 2026 | Senior UXD |
+| 02 | 4Mation | Mar 2024 — Sep 2024 | Senior UX/UI Designer |
+| 03 | Hello Molly | Jun 2023 — Dec 2023 | Senior UX/UI Designer (Contractor) |
+| 04 | Oovvuu | Jul 2021 — Jun 2023 | Senior Lead UX/UI Designer |
+| 05 | SiteMinder | Feb 2021 — Jul 2021 | Senior Lead UX/UI Designer |
+| 06 | Panthera Property Group | Sep 2020 — Feb 2021 | Senior Lead UX/UI Designer |
+| 07 | Rockmelon | May 2018 — Jul 2020 | Head of UX/UI Designer |
+| 08 | The Iconic | Mar 2016 — Jun 2018 | Head of UXD |
+| 09 | Skyfii | Jul 2015 — May 2016 | Lead UX-UI |
+| 10 | News Corp | Nov 2014 — Jul 2015 | Senior UX-UI |
+| 11 | Tigerspike | Mar 2008 — Nov 2014 | Lead UX-UI |
 
 ---
 

@@ -173,7 +173,7 @@ const SwissCaseHero = ({ slug }) => {
         </Cell>
       </div>
 
-      <Footer no={role.no} of="08" />
+      <Footer no={role.no} of="11" />
     </div>
   );
 };
@@ -311,7 +311,7 @@ const SwissCaseShort = ({ slug }) => {
         </Cell>
       </div>
 
-      <Footer no={role.no} of="08" />
+      <Footer no={role.no} of="11" />
     </div>
   );
 };

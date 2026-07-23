@@ -60,7 +60,7 @@ const SwissIndex = () => {
       <div style={{ ...grid(), padding: mob ? "32px 20px 16px" : "60px 56px 24px", borderBottom: `1px solid ${rule}`, alignItems: "baseline" }}>
         <Cell span={2}><div style={{ fontSize: 12, letterSpacing: 1, textTransform: "uppercase", color: muted }}>03 / Work</div></Cell>
         <Cell span={8}><h2 style={{ fontSize: mob ? "clamp(26px, 7vw, 40px)" : "clamp(36px, 5vw, 64px)", margin: 0, fontWeight: 500, letterSpacing: -1.6 }}>Selected engagements, 2006 — 2023.</h2></Cell>
-        {!mob && <Cell span={2} style={{ textAlign: "right", fontFamily: mono, fontSize: 11, color: muted, letterSpacing: 1, textTransform: "uppercase" }}>8 chapters</Cell>}
+        {!mob && <Cell span={2} style={{ textAlign: "right", fontFamily: mono, fontSize: 11, color: muted, letterSpacing: 1, textTransform: "uppercase" }}>11 chapters</Cell>}
       </div>
 
       {/* WORK ROWS */}
