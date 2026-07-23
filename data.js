@@ -105,11 +105,22 @@ window.ICARUS_DATA = {
       company: "Panthera Property Group",
       years: "Sep 2020 — Feb 2021",
       role: "Senior Lead UX/UI Designer",
-      summary: "Summary to be added.",
+      summary: "Panthera Property Group is a property development group operating retail and commercial assets across regional NSW.",
       focus: [
-        "Details to be added"
+        {
+          heading: "Key Responsibilities",
+          items: [
+            "Designed a multi-merchant e-commerce platform for F&B/CPG retailers across regional NSW, collaborating cross-functionally with business stakeholders."
+          ]
+        },
+        {
+          heading: "Key Achievements",
+          items: [
+            "Delivered multi-merchant checkout, fulfilment hub, and booking service features, enabling online trade during COVID-19 lockdowns."
+          ]
+        }
       ],
-      outcomes: ["Details to be added"]
+      outcomes: ["Enabled online trade during COVID-19", "Multi-merchant checkout & fulfilment", "Cross-functional delivery"]
     },
     {
       no: "07",
@@ -117,11 +128,22 @@ window.ICARUS_DATA = {
       company: "Rockmelon",
       years: "May 2018 — Jul 2020",
       role: "Head of UX/UI Designer",
-      summary: "Designed and managed a platform empowering parents and therapists of children with autism spectrum disorders and learning disabilities.",
+      summary: "Rockmelon is a Sydney-based platform providing digital tools and learning resources for parents and therapists of children with autism spectrum disorder.",
       focus: [
-        "Suite of apps to centralise communications and tasks",
-        "Learning blocks tailored for therapists and families",
-        "Strategic user research and interviews with carers"
+        {
+          heading: "Key Responsibilities",
+          items: [
+            "Owned end-to-end, user-centric design methodology from the ground up through to final product design for a suite of apps supporting parents and therapists of children with autism spectrum and learning disabilities.",
+            "Created and maintained the design system as the business grew and new features were added."
+          ]
+        },
+        {
+          heading: "Key Achievements",
+          items: [
+            "Led user research and interviews, working cross-functionally with clinicians and developers to shape centralised communication, task management, and learning tools.",
+            "Scaled the design system alongside business and feature growth, keeping the product suite consistent as it expanded."
+          ]
+        }
       ],
       outcomes: ["Stronger parent–therapist communication", "Streamlined task management", "Better learning experiences"]
     },
