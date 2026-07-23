@@ -54,12 +54,22 @@ window.ICARUS_DATA = {
       company: "Hello Molly",
       years: "Jun 2023 — Dec 2023",
       role: "Senior UX/UI Designer (Contractor)",
-      summary: "Strategic collaboration with tech and executive teams to elevate the Hello Molly e-commerce platform.",
+      summary: "Hello Molly is an Australian-founded global online fashion retailer.",
       focus: [
-        "Modern, user-friendly interface that showcases the product range",
-        "Contextual search keyed to user behaviour and preferences",
-        "Wishlist and richer user profiles for personalised shopping",
-        "Improved data collection to understand customer preferences"
+        {
+          heading: "Key Responsibilities",
+          items: [
+            "Redesigned the website as a fully responsive experience across mobile, tablet, and desktop, implementing a design system for consistency across breakpoints.",
+            "Designed across customer communication touchpoints — including wishlist, EDM emails, and SMS — to strengthen the relationship between Hello Molly and its customers."
+          ]
+        },
+        {
+          heading: "Key Achievements",
+          items: [
+            "Improved customer engagement and lifted cart revenue by using data-informed design to connect the wishlist, EDM, and SMS touchpoints into a more cohesive shopping journey.",
+            "Implemented a responsive design system spanning mobile, tablet, and desktop, improving design consistency and speeding up delivery."
+          ]
+        }
       ],
       outcomes: ["More engaging UX", "Lifted satisfaction & retention", "Sharper customer insight"]
     },
