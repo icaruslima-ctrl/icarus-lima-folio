@@ -22,7 +22,7 @@ const SwissIndex = () => {
           <div style={{ fontFamily: mono, fontSize: 11, color: muted, marginTop: 8 }}>26.04.2026</div>
         </Cell>
         <Cell span={10}>
-          <h1 style={{ margin: 0, fontWeight: 500, textWrap: "balance", letterSpacing: mob ? "-1.5px" : "-3.6px", lineHeight: "1.05", fontSize: mob ? "clamp(36px, 11vw, 64px)" : "80px" }}>
+          <h1 style={{ margin: 0, fontWeight: 500, textWrap: "balance", letterSpacing: mob ? "-1.05px" : "-2.52px", lineHeight: "1.05", fontSize: mob ? "clamp(25px, 7.7vw, 45px)" : "56px" }}>
             Turning complex problems into opportunities.<br />
             Designing digital products for humans and machines — where <span style={{ color: accent }}>human-centred design</span> meets <span style={{ color: accent }}>AI-enabled execution.</span>
           </h1>
