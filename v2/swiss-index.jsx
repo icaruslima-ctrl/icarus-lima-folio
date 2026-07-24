@@ -32,14 +32,13 @@ const SwissIndex = () => {
       {/* MANIFESTO */}
       <div style={{ ...grid(), padding: mob ? "24px 20px 40px" : "32px 56px 56px", borderBottom: `1px solid ${rule}` }}>
         <Cell span={2}><div style={{ fontSize: 12, letterSpacing: 1, textTransform: "uppercase", color: muted }}>Manifesto</div></Cell>
-        <Cell span={7}>
+        <Cell span={10}>
           <p style={{ fontSize: mob ? 16 : 18, lineHeight: 1.55, margin: 0 }}>I'm a seasoned Product Designer working at the intersection of strategy, design, and technology — where human-centred thinking meets AI-enabled execution.</p>
           <p style={{ fontSize: 15, lineHeight: 1.6, margin: "16px 0 0", color: "#444" }}>Great design transforms how people interact with technology, shapes brand perception, and drives measurable outcomes for both users and businesses. What defines my practice is how I get there — integrating AI-powered tools across the entire design lifecycle, from research synthesis and ideation through to design system governance and front-end quality assurance.</p>
           <p style={{ fontSize: 15, lineHeight: 1.6, margin: "16px 0 0", color: "#444" }}>My workflow spans Figma, Claude, and Cursor. Not to replace creative thinking, but to compress the low-value work so teams can focus on what actually moves the needle — faster discovery cycles, tighter design-to-dev handoffs, and a design function that actively QAs front-end output against the design system, freeing developers to focus on feature logic rather than implementation detail.</p>
           <p style={{ fontSize: 15, lineHeight: 1.6, margin: "16px 0 0", color: "#444" }}>I'm motivated by learning, mentoring, and building cross-functional capability — bridging design, ent, business, and users through data insights, AI-driven tools, and a consistent bias toward impact.</p>
           <p style={{ fontSize: 15, lineHeight: 1.6, margin: "16px 0 0", color: "#444" }}>Throughout my career I've helped deliver transformative digital experiences for some of Australia's most recognised brands — Foxtel, SBS, Vodafone, Woolworths, News Corp, Ticketek, Service NSW, GrainCorp and THE ICONIC — with one consistent goal: meaningful work that creates lasting value for users, businesses, and society.</p>
         </Cell>
-        {!mob && <Cell span={3} />}
       </div>
 
       {/* PILLARS */}
